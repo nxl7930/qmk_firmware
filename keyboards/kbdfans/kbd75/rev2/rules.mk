@@ -24,6 +24,6 @@ NKRO_ENABLE = yes		# USB Nkey Rollover - if this doesn't work, see here: https:/
 BACKLIGHT_ENABLE = yes  # Enable keyboard backlight functionality
 AUDIO_ENABLE = no
 RGBLIGHT_ENABLE = yes
-UNICODE_ENABLE = no     # Enable use of basic unicode using UC(<code point>); Codes up to 0x7FFF are supported
+UNICODE_ENABLE = yes     # Enable use of basic unicode using UC(<code point>); Codes up to 0x7FFF are supported
 
 LAYOUTS = 75_ansi 75_iso

@@ -17,7 +17,7 @@
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	// Keymap _BL: Base Layer (Default Layer)
 	[_BL] = LAYOUT(
-		KC_ESC,   KC_MUTE,  KC_VOLD,  KC_VOLU,  KC_F4,    BL_STEP,  KC_BRID,  KC_BRIU,  KC_F8,    KC_F9,    KC_F10,   KC_F11,   KC_F12,   KC_CALC,  MO(_SL),  KC_DEL,
+		KC_ESC,   KC_MUTE,  KC_VOLD,  KC_VOLU,  RGB_MOD,  BL_STEP,  KC_BRID,  KC_BRIU,  KC_F8,    KC_F9,    KC_F10,   KC_F11,   KC_CALC,  KC_PSCR,  MO(_SL),  KC_DEL,
 		KC_GRV,   KC_1,     KC_2,     KC_3,     KC_4,     KC_5,     KC_6,     KC_7,     KC_8,     KC_9,     KC_0,     KC_MINS,  KC_EQL,   XXXXXXX,  KC_BSPC,  KC_HOME,
 		KC_TAB,   KC_Q,     KC_W,     KC_E,     KC_R,     KC_T,     KC_Y,     KC_U,     KC_I,     KC_O,     KC_P,     KC_LBRC,  KC_RBRC,  KC_BSLS,            KC_PGUP,
 		KC_CAPS,  KC_A,     KC_S,     KC_D,     KC_F,     KC_G,     KC_H,     KC_J,     KC_K,     KC_L,     KC_SCLN,  KC_QUOT,                      KC_ENT,   KC_PGDN,
@@ -27,11 +27,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 	// Keymap _FGL: Function & Greek Layer; Overlay Base Layer with Fcn keys and frequently used math characters
 	[_FGL] = LAYOUT(
-		_______,  KC_F1,    KC_F2,    KC_F3,    KC_F4,    KC_F5,    KC_F6,    KC_F7,    KC_F8,    KC_F9,    KC_F10,   KC_F11,   KC_F12,   KC_PSCR,  KC_PAUS,  _______,
-		_______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  RESET,    _______,
-		_______,  KC_Q,     _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,            _______,
-		_______,  KC_A,     _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,                      _______,  _______,
-		_______,  _______,  KC_Z,     _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,            _______,  _______,
+		_______,  KC_F1,    KC_F2,    KC_F3,    KC_F4,    KC_F5,    KC_F6,    KC_F7,    KC_F8,    KC_F9,    KC_F10,   KC_F11,   KC_F12,   _______,  KC_PAUS,  _______,
+		_______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  UC(0xB1), UC(0x2245),_______, RESET,    _______,
+		_______,  KC_Q,     _______,  UC(0x3B5),UC(0x3C1),_______,  UC(0x3C5),UC(0x3B8),_______,  UC(0x3B4),UC(0x3C0),_______,  _______,  _______,            _______,
+		_______,  UC(0x3B1),UC(0x3C3),UC(0x394),UC(0x3C6),UC(0x3B3),UC(0x3B7),UC(0x3BE),UC(0x3BA),UC(0x3BB),_______,  _______,                      _______,  _______,
+		_______,  _______,  UC(0x3B6),UC(0x3C7),UC(0x3C8),UC(0x3C9),UC(0x3B2),UC(0x3BD),UC(0x3BC),UC(0x2264),UC(0x2265),_______,_______,            _______,  _______,
 		_______,  _______,  _______,                      _______,  _______,  _______,                      _______,  _______,  _______,  _______,  _______,  _______
 		),
 
